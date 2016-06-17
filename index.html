@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twoday is</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        var today = new Date();
+        var origin = new Date(0,0,0);
+        var days = Math.floor((today.getTime() - origin.getTime()) / 1000 / 60 / 60 / 24);
+        $('ul li').hide();
+        $('#two li').eq(days % 2).show();
+        $('#three li').eq(days % 3).show();
+        $('#four li').eq(days % 4).show();
+        $('#five li').eq(days % 5).show();
+        $('#six li').eq(days % 6).show();
+        $('#seven li').eq(days % 7).show();
+        $('#eight li').eq(days % 8).show();
+        $('#nine li').eq(days % 9).show();
+      });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 20px;
+        color: #696a6d;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      h2, small {
+        color: #f15d2a;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      a, a:link, a:visited, a:hover, a:active {
+        color: #f15d2a;
+        text-decoration: none;
+        border-bottom: 1px dotted #f15d2a;
+      }
+
+      #accordion1 {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">    
+      <h2>Today is&hellip;</h2>
+      <h1>
+        <ul id="two">
+          <li>Leftday</li>
+          <li>Rightday</li>
+        </ul>
+      </h1>
+      <small>Twoday</small>
+      <h1>
+        <ul id="three">
+          <li>Maidenday</li>
+          <li>Motherday</li>
+          <li>Croneday</li>
+        </ul>
+      </h1>
+      <small>Threeday</small>
+      <h1>
+        <ul id="four">
+          <li>Northday</li>
+          <li>Eastday</li>
+          <li>Southday</li>
+          <li>Westday</li>
+        </ul>
+      </h1>
+      <small>Fourday</small>
+      <h1>
+        <ul id="five">
+          <li>Thumbday</li>
+          <li>Pointerday</li>
+          <li>Middleday</li>
+          <li>Ringday</li>
+          <li>Pinkyday</li>
+        </ul>
+      </h1>
+      <small>Fiveday</small>
+      <h1>
+        <ul id="six">
+          <li>Red-day</li>
+          <li>Orangeday</li>
+          <li>Yellowday</li>
+          <li>Greenday</li>
+          <li>Blueday</li>
+          <li>Violetday</li>
+        </ul>
+      </h1>
+      <small>Sixday</small>
+      <h1>
+        <ul id="seven">
+          <li>Sunday</li>
+          <li>Monday</li>
+          <li>Tuesday</li>
+          <li>Wednesday</li>
+          <li>Thursday</li>
+          <li>Friday</li>
+          <li>Saturday</li>
+        </ul>
+      </h1>
+      <small>Sevenday</small>
+      <div class="accordion" id="accordion1">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <p>
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                About Twoday.is
+              </a>
+            </p>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse">
+            <div class="accordion-inner">
+              <p>Have you ever wanted to do something every other day? What about every third day?</p>
+              <p>Twoday.is is an experiment (inspired by an <a href="http://forum.bodybuilding.com/showthread.php?t=107926751">amazing discussion</a> about working out every other day) that suggests supplemental, non-seven-day “weeks” for use in these situations.</p>
+              <p>Each week has a different period (every two days, three days, etc.) and a sequence of (hopefully) memorable names.</p>
+              <p>For reference, the sequences are:</p>
+              <table class="table">
+                <tr>
+                  <th>
+                    Period
+                  </th>
+                  <th>
+                    Names
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    Left, Right
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    Maiden, Mother, Crone
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    4
+                  </td>
+                  <td>
+                    North, East, South, West
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    5
+                  </td>
+                  <td>
+                    Thumb, Pointer, Middle, Ring, Pinky
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    6
+                  </td>
+                  <td>
+                    Red, Orange, Yellow, Green, Blue, Violet
+                  </td>
+                </tr>
+              </table>
+              <div class="well">
+                <h4>Examples</h4>
+                <p>Them: “What day is it fourday?”<br>You: “It’s Eastday!”</p>
+                <p>Them: “What day is it today?”<br>You: “Today? Or twoday?”</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </body>
+</html>
